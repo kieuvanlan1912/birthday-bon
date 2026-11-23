@@ -1,6 +1,6 @@
 # Gửi Bon
 
-Trang kỷ niệm kể chuyện về năm đầu đời của Kiều Huy Long (Bon), từ lúc ba mẹ chờ con đến sinh nhật một tuổi.
+Trang kỷ niệm kể chuyện về năm đầu đời của Kiều Huy Long (Bon), từ lúc bố mẹ chờ con đến sinh nhật một tuổi.
 
 ## Chạy local
 
