@@ -1,0 +1,2 @@
+import { vietnameseFontCheck } from '@/data/typography'
+export default function FontCheckPage(){return <main className="grid min-h-screen place-items-center bg-cream p-6 text-ink"><article className="max-w-3xl rounded-[2rem] bg-paper p-8 shadow-toy"><p className="text-sm font-semibold uppercase tracking-widest text-coral">Kiểm tra font Mali · Vietnamese</p><h1 className="mt-5 font-display text-4xl font-semibold">Dấu tiếng Việt</h1><p data-testid="vietnamese-font-sample" lang="vi" className="mt-6 font-letter text-3xl leading-[1.8]">{vietnameseFontCheck}</p></article></main>}

@@ -1,0 +1,1 @@
+export const splitVietnameseGraphemes=(value:string)=>Array.from(value.normalize('NFC')).reduce<string[]>((characters,character)=>{if(/\p{Mark}/u.test(character)&&characters.length)characters[characters.length-1]+=character;else characters.push(character);return characters},[])

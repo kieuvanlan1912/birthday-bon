@@ -1,3 +1,6 @@
 import { describe, expect, it } from 'vitest'
 import { placeholder } from '@/lib/assets'
-describe('asset fallback',()=>{it('creates a safe inline SVG',()=>{expect(placeholder('Ảnh 7 · Tháng 1')).toMatch(/^data:image\/svg\+xml/)});it('escapes markup before encoding',()=>{expect(decodeURIComponent(placeholder('<script>'))).not.toContain('<script>')})})
+import { vietnameseFontCheck } from '@/data/typography'
+import { splitVietnameseGraphemes } from '@/lib/typography'
+describe('asset fallback',()=>{it('creates a label-free inline SVG by default',()=>{const svg=decodeURIComponent(placeholder('Ảnh 7 · Tháng 1',false));expect(svg).toContain('<svg');expect(svg).not.toContain('Ảnh 7')});it('shows and escapes labels only in debug mode',()=>{const svg=decodeURIComponent(placeholder('<script>',true));expect(svg).not.toContain('<script>');expect(svg).toContain('&lt;script&gt;')});it('varies the placeholder art by slot',()=>{expect(placeholder('Ảnh 1',false,'ch1-01')).not.toBe(placeholder('Ảnh 2',false,'ch1-02'))})})
+describe('Vietnamese typography',()=>{it('keeps the iOS font-check sentence normalized',()=>{expect(vietnameseFontCheck).toBe(vietnameseFontCheck.normalize('NFC'));expect(vietnameseFontCheck).toContain('chưa hiểu sinh nhật');expect(vietnameseFontCheck).toContain('được yêu thương')});it('never splits a complex Vietnamese combining mark while typing',()=>{const characters=splitVietnameseGraphemes('ngượ̀i');expect(characters.join('')).toBe('ngượ̀i'.normalize('NFC'));expect(characters.some(character=>/^\p{Mark}/u.test(character))).toBe(false)})})

@@ -39,3 +39,9 @@ Xem bảng ánh xạ đầy đủ và quy tắc xử lý trong `AGENTS.md`. Slot
 ## GitHub Pages
 
 Workflow `.github/workflows/deploy.yml` build và deploy mỗi lần push lên `main`. Trong GitHub, mở **Settings → Pages → Source → GitHub Actions**. URL đích: <https://kieuvanlan1912.github.io/birthday-bon/>.
+
+## Kiểm tra giao diện
+
+- Font tiếng Việt: `/#/font-check`
+- Hiện nhãn slot ảnh khi debug: `/?debug=1#/`
+- Chế độ TV: bấm biểu tượng màn hình trên header hoặc mở `/?tv=1#/`; dùng phím mũi tên, Space hoặc Enter để chuyển chương, Escape để thoát.
