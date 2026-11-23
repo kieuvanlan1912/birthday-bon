@@ -1,0 +1,6 @@
+import { Canvas, useFrame } from '@react-three/fiber'
+import { Float, Text } from '@react-three/drei'
+import { useRef } from 'react'
+import type { Group } from 'three'
+function CakeModel({lit}:{lit:boolean}){ const ref=useRef<Group>(null); useFrame((_,delta)=>{if(ref.current)ref.current.rotation.y+=delta*.12}); return <group ref={ref} position={[0,-.55,0]}><mesh><cylinderGeometry args={[1.45,1.55,.75,48]}/><meshStandardMaterial color="#f7c9d4"/></mesh><mesh position={[0,.42,0]}><cylinderGeometry args={[1.2,1.42,.18,48]}/><meshStandardMaterial color="#fffdf8"/></mesh>{[-.7,0,.7].map(x=><mesh key={x} position={[x,.7,0]}><cylinderGeometry args={[.07,.07,.55,16]}/><meshStandardMaterial color="#ffe49b"/></mesh>)}{lit&&[-.7,0,.7].map(x=><Float key={x} speed={4} floatIntensity={.15}><mesh position={[x,1.08,0]}><sphereGeometry args={[.1,16,16]}/><meshStandardMaterial emissive="#ff9d5c" emissiveIntensity={6} color="#fff1a8"/></mesh></Float>)}<Text position={[0,.95,.12]} fontSize={.8} color="#6b526e" anchorX="center">1</Text></group> }
+export function Cake({lit}:{lit:boolean}){return <div className="h-80 w-full" aria-label="Bánh sinh nhật ba chiều với nến số một"><Canvas dpr={[1,1.5]} camera={{position:[0,1.4,5],fov:42}}><ambientLight intensity={2.5}/><pointLight position={[3,4,4]} intensity={18} color="#ffe49b"/><CakeModel lit={lit}/></Canvas></div>}

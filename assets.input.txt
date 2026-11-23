@@ -1,0 +1,5 @@
+# Mỗi dòng theo dạng: ảnh 1: inbox-file.jpg hoặc https://example.com/photo.jpg
+# ảnh background: hero.jpg
+# ảnh background 2: letter.jpg
+# ảnh og: og.jpg
+# nhạc: bg-music.mp3

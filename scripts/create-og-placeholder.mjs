@@ -1,0 +1,4 @@
+import sharp from 'sharp'
+import { fileURLToPath } from 'node:url'
+const svg=`<svg width="1200" height="630" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="g" x2="1" y2="1"><stop stop-color="#25213e"/><stop offset="1" stop-color="#805e78"/></linearGradient></defs><rect width="1200" height="630" fill="url(#g)"/><circle cx="950" cy="130" r="160" fill="#ffe49b" opacity=".9"/><circle cx="170" cy="520" r="200" fill="#cde9dc" opacity=".3"/><text x="600" y="280" text-anchor="middle" fill="#fffdf8" font-family="sans-serif" font-size="110" font-weight="bold">Gửi Bon</text><text x="600" y="360" text-anchor="middle" fill="#ffe49b" font-family="sans-serif" font-size="34">Một năm đầu đời · 02/01/2026</text></svg>`
+await sharp(Buffer.from(svg)).jpeg({quality:88}).toFile(fileURLToPath(new URL('../public/og-image.jpg',import.meta.url)))

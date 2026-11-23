@@ -1,0 +1,5 @@
+import { assetsManifest } from '@/data/assets.manifest'
+const photoModules = import.meta.glob<string>('../assets/photos/*', { eager: true, query: '?url', import: 'default' })
+const escapeXml = (value: string) => value.replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&apos;'}[c] ?? c))
+export const placeholder = (label: string) => `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(`<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900"><defs><linearGradient id="g"><stop stop-color="#f7c9d4"/><stop offset="1" stop-color="#cde9dc"/></linearGradient></defs><rect width="100%" height="100%" rx="48" fill="url(#g)"/><circle cx="930" cy="180" r="120" fill="#ffe49b" opacity=".7"/><text x="50%" y="50%" text-anchor="middle" fill="#6b526e" font-family="sans-serif" font-size="44">${escapeXml(label)}</text></svg>`)}`
+export const resolveAsset = (id: string) => { const asset = assetsManifest.find(item => item.id === id); const bundled=asset?.src?Object.entries(photoModules).find(([path])=>path.endsWith(`/${asset.src}`))?.[1]:undefined; return bundled || placeholder(asset?.label ?? id) }

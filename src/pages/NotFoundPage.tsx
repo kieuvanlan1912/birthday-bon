@@ -1,0 +1,2 @@
+import { Link } from 'react-router-dom'
+export default function NotFoundPage(){return <main className="grid min-h-screen place-items-center bg-cream p-6 text-center text-ink"><div><p className="text-7xl">🎈</p><h1 className="mt-5 font-display text-5xl font-semibold">Bóng bay lạc đường rồi</h1><p className="mt-3 text-plum">Trang này không nằm trong cuốn chuyện của Bon.</p><Link className="mt-7 inline-block rounded-full bg-ink px-6 py-3 text-white" to="/">Về đầu câu chuyện</Link></div></main>}
