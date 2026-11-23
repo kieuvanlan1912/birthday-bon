@@ -16,12 +16,12 @@ Không upload trực tiếp vào `src/assets/photos/`; script sẽ tự nén Web
 | [ ] | ảnh background | `bg-hero` | `bg-hero.jpg` | Ảnh nổi bật làm nền mở đầu |
 | [ ] | ảnh background 2 | `bg-letter` | `bg-letter.jpg` | Nền nhẹ cho lá thư cuối |
 | [ ] | ảnh og | `og-image` | `og-image.jpg` | Ảnh chia sẻ Facebook/Zalo, ngang 1200×630 |
-| [ ] | ảnh 1 | `ch1-01` | `anh-01.jpg` | Khoảnh khắc biết tin có con |
-| [ ] | ảnh 2 | `ch1-02` | `anh-02.jpg` | Ảnh siêu âm |
-| [ ] | ảnh 3 | `ch1-03` | `anh-03.jpg` | Bụng bầu/ba mẹ chờ Bon |
-| [ ] | ảnh 4 | `ch2-01` | `anh-04.jpg` | Ngày Bon chào đời |
-| [ ] | ảnh 5 | `ch2-02` | `anh-05.jpg` | Bàn tay/chân nhỏ |
-| [ ] | ảnh 6 | `ch2-03` | `anh-06.jpg` | Ba mẹ bế Bon |
+| [x] | ảnh 1 | `ch1-01` | `anh-01.jpg` | Khoảnh khắc biết tin có con |
+| [x] | ảnh 2 | `ch1-02` | `anh-02.jpg` | Ảnh siêu âm |
+| [x] | ảnh 3 | `ch1-03` | `anh-03.jpg` | Bụng bầu/ba mẹ chờ Bon |
+| [x] | ảnh 4 | `ch2-01` | `anh-04.jpg` | Ngày Bon chào đời |
+| [x] | ảnh 5 | `ch2-02` | `anh-05.jpg` | Bàn tay/chân nhỏ |
+| [x] | ảnh 6 | `ch2-03` | `anh-06.jpg` | Ba mẹ bế Bon |
 | [ ] | ảnh 7–18 | `m01..m12` | `anh-07.jpg`…`anh-18.jpg` | Mỗi tháng một ảnh, tháng 1 đến tháng 12 |
 | [ ] | ảnh 19 | `ch4-01` | `anh-19.jpg` | Ảnh gia đình |
 | [ ] | ảnh 20 | `ch4-02` | `anh-20.jpg` | Ảnh đặt trong thư |

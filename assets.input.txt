@@ -4,3 +4,4 @@
 # ảnh og: og.jpg
 # nhạc: bg-music.mp3
 # Nhạc hiện tại đã được cài; chỉ thêm dòng `nhạc: ...` khi muốn thay.
+# Ảnh 1–6 đã được xử lý và gắn vào manifest.

@@ -1,7 +1,7 @@
 export type AssetSlot = { id: string; label: string; chapter: string; caption: string; src: string; alt: string }
 export const assetSources: Record<string,string> = {
   'bg-hero':'','bg-letter':'','og-image':'',
-  'ch1-01':'','ch1-02':'','ch1-03':'','ch2-01':'','ch2-02':'','ch2-03':'',
+  'ch1-01':'ch1-01.webp','ch1-02':'ch1-02.webp','ch1-03':'ch1-03.webp','ch2-01':'ch2-01.webp','ch2-02':'ch2-02.webp','ch2-03':'ch2-03.webp',
   'm01':'','m02':'','m03':'','m04':'','m05':'','m06':'','m07':'','m08':'','m09':'','m10':'','m11':'','m12':'',
   'ch4-01':'','ch4-02':'','album-01':'','album-02':'','album-03':'','album-04':'','album-05':'','album-06':'','album-07':'','album-08':'','album-09':'','album-10':'',
 }
