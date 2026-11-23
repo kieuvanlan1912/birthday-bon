@@ -19,7 +19,7 @@ npm run build
 
 ## Gắn ảnh và nhạc
 
-Thả file gốc vào `inbox/`, ghi danh sách vào `assets.input.txt`, rồi chạy:
+Xem [`CHECKLIST-ANH.md`](./CHECKLIST-ANH.md). Thả file gốc vào `inbox/`, ghi danh sách vào `assets.input.txt`, rồi chạy:
 
 ```bash
 npm run assets
