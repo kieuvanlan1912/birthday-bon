@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" fill="none">
+  <defs>
+    <linearGradient id="bday-bg" x1="90" y1="20" x2="720" y2="1000" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEE0F9"/>
+      <stop offset="0.52" stop-color="#F5DDEA"/>
+      <stop offset="1" stop-color="#F8D2CB"/>
+    </linearGradient>
+    <radialGradient id="bday-glow" cx="0" cy="0" r="1" gradientTransform="translate(400 570) rotate(90) scale(380)" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8E7" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFF8E7" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="bday-cake" x1="220" y1="575" x2="590" y2="820" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF0C2"/>
+      <stop offset="1" stop-color="#F7CE7C"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="1000" fill="url(#bday-bg)"/>
+  <circle cx="400" cy="570" r="380" fill="url(#bday-glow)"/>
+
+  <g fill="#FFF8E5" opacity="0.65">
+    <circle cx="120" cy="275" r="4"/>
+    <circle cx="690" cy="215" r="3"/>
+    <circle cx="648" cy="410" r="3.5"/>
+    <circle cx="132" cy="520" r="2.5"/>
+    <circle cx="570" cy="146" r="2.5"/>
+    <circle cx="256" cy="188" r="3"/>
+  </g>
+
+  <path d="M60 170c180 94 430 88 680-6" stroke="#5D4658" stroke-width="4" stroke-linecap="round" opacity="0.55"/>
+  <g stroke="#5D4658" stroke-width="4" stroke-linejoin="round">
+    <path d="M124 197 117 256l58-25Z" fill="#FF9D8C"/>
+    <path d="M228 226 227 291l65-36Z" fill="#FFD97D"/>
+    <path d="M344 240 351 305l58-38Z" fill="#9ED6BC"/>
+    <path d="M456 239 469 301l56-44Z" fill="#A9D6E5"/>
+    <path d="M560 221 582 279l54-50Z" fill="#D9C7F0"/>
+    <path d="M659 192 688 245l47-55Z" fill="#FF9D8C"/>
+  </g>
+
+  <g>
+    <path d="M124 590c-7 8-13 3-8-6 8-14 28-14 34 4 6 19-13 33-30 26" stroke="#FF8B7B" stroke-width="2.5" stroke-linecap="round"/>
+    <ellipse cx="132" cy="666" rx="46" ry="56" fill="#FF9D8C" stroke="#5D4658" stroke-width="5"/>
+    <path d="M132 722v64" stroke="#5D4658" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="700" cy="630" rx="42" ry="52" fill="#A9D6E5" stroke="#5D4658" stroke-width="5"/>
+    <path d="M700 682v64" stroke="#5D4658" stroke-width="3" stroke-linecap="round"/>
+  </g>
+
+  <ellipse cx="400" cy="860" rx="245" ry="34" fill="#5B4560" opacity="0.12"/>
+  <g stroke="#5D4658" stroke-width="6" stroke-linejoin="round">
+    <rect x="208" y="700" width="384" height="162" rx="42" fill="#FFC1B0"/>
+    <path d="M208 732c21 17 42 4 64 11 21 7 37 19 61 8 24-11 42-4 63 2 23 6 44-4 66-9 22-5 42 9 63 3 23-6 42-17 67-3v-18c0-19-15-35-34-35H242c-19 0-34 16-34 35Z" fill="#FFF8E9"/>
+    <path d="M208 745c17 10 32 3 50 7 25 7 41 21 68 10 22-9 43-4 64 1 23 5 44-4 66-9 24-6 43 9 67 5 22-4 40-13 69-2v-22c-20-13-42-4-64 3-21 6-41-7-63-2-22 5-43 15-66 9-21-5-40-12-63-2-26 10-41-2-64-9-20-6-38 6-62-6Z" fill="#FFFDF7"/>
+    <rect x="274" y="570" width="252" height="137" rx="34" fill="url(#bday-cake)"/>
+    <path d="M274 597c17 13 32 3 49 9 17 6 31 17 51 6 19-10 35-4 52 2 19 6 37-4 55-8 20-5 37 7 56 2 15-4 27-11 39-3v-13c0-19-14-34-33-34H307c-19 0-33 15-33 34Z" fill="#FFF8E9"/>
+    <path d="M274 613c16 8 28 1 45 5 20 5 34 17 57 8 19-8 38-3 57 1 20 4 39-4 59-8 20-4 37 7 57 3 19-4 34-11 46 0v-23c-16-11-33-4-51 2-19 6-36-6-56-1-20 5-39 12-59 6-19-5-36-10-57-2-23 9-38-1-57-7-20-6-36 6-56-3Z" fill="#FFFDF7"/>
+
+    <circle cx="400" cy="662" r="43" fill="#FFF8E9"/>
+    <path d="M400 706v-14" stroke="#FF8B7B"/>
+  </g>
+  <text x="400" y="682" text-anchor="middle" font-family="'Baloo 2', sans-serif" font-size="54" font-weight="800" fill="#FF8B7B">1</text>
+
+  <g stroke="#5D4658" stroke-width="5" stroke-linecap="round">
+    <rect x="388" y="486" width="24" height="79" rx="12" fill="#FFFDF8"/>
+    <path d="M388 503h24M388 521h24M388 539h24" stroke="#FF8B7B" stroke-width="8"/>
+    <path d="M400 486v-13" stroke-width="4"/>
+  </g>
+  <g>
+    <ellipse cx="400" cy="462" rx="28" ry="35" fill="#FFD36A" opacity="0.35"/>
+    <path d="M400 428c15 18 20 30 12 44-5 8-18 9-24 1-9-12-3-29 12-45Z" fill="#FFB15C" stroke="#5D4658" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M400 446c7 9 9 16 5 23-3 5-9 5-12 1-4-7-1-15 7-24Z" fill="#FFF6C9"/>
+  </g>
+
+  <g fill="#FF8B7B">
+    <path d="M254 652c5 0 9 4 9 9 0-5 4-9 9-9-5 0-9-4-9-9 0 5-4 9-9 9Z"/>
+    <path d="M548 735c4 0 7 3 7 7 0-4 3-7 7-7-4 0-7-3-7-7 0 4-3 7-7 7Z"/>
+  </g>
+  <g fill="#FFD97D">
+    <circle cx="514" cy="618" r="5"/>
+    <circle cx="279" cy="737" r="4"/>
+    <circle cx="597" cy="786" r="4"/>
+    <circle cx="214" cy="812" r="3"/>
+  </g>
+  <g fill="#A9D6E5" opacity="0.9">
+    <circle cx="176" cy="590" r="4"/>
+    <circle cx="640" cy="545" r="3"/>
+    <circle cx="663" cy="779" r="4"/>
+  </g>
+  <g>
+    <rect x="354" y="822" width="11" height="5" rx="2.5" fill="#FFD97D" transform="rotate(-24 354 822)"/>
+    <rect x="466" y="800" width="10" height="4" rx="2" fill="#A9D6E5" transform="rotate(20 466 800)"/>
+    <rect x="531" y="834" width="10" height="4" rx="2" fill="#FF8B7B" transform="rotate(-16 531 834)"/>
+  </g>
+
+  <rect x="28" y="28" width="744" height="944" rx="38" stroke="#FFFDF8" stroke-opacity="0.45" stroke-width="2"/>
+</svg>
