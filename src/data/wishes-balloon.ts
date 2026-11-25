@@ -1,0 +1,1 @@
+export const balloonWishes=['Bon ơi cười lên nào!','Mỗi ngày đều thật vui nhé!','Ăn ngoan, ngủ ngon, lớn thật nhanh!','Cả nhà yêu Bon rất nhiều!','Thêm một tuổi, thêm nghịch ngợm!','Cứ tò mò và khám phá nhé!','Chúc Bon luôn khỏe mạnh!','Hôm nay Bon là ngôi sao!'] as const

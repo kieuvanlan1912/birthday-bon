@@ -1,4 +1,8 @@
 export type AssetSlot = { id: string; label: string; chapter: string; caption: string; src: string; alt: string }
+export const sfxManifest = {
+  'sfx-stamp':'audio/sfx/sfx-stamp.mp3','sfx-pop':'audio/sfx/sfx-pop.mp3','sfx-ting':'audio/sfx/sfx-ting.mp3','sfx-poof':'audio/sfx/sfx-poof.mp3','sfx-whoosh':'audio/sfx/sfx-whoosh.mp3',
+} as const
+export type SfxId=keyof typeof sfxManifest
 export const assetSources: Record<string,string> = {
   'bg-hero':'','bg-letter':'','og-image':'',
   'ch1-01':'ch1-01.webp','ch1-02':'ch1-02.webp','ch1-03':'ch1-03.webp','ch2-01':'ch2-01.webp','ch2-02':'ch2-02.webp','ch2-03':'ch2-03.webp',

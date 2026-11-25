@@ -13,6 +13,11 @@ Khi người dùng gửi danh sách `ảnh background`, `ảnh background 2`, `�
 | ảnh 19–20 | `ch4-01..02` |
 | ảnh 21–30 | `album-01..10` |
 | nhạc | `public/audio/bg-music.mp3` |
+| sfx đóng dấu | `public/audio/sfx/sfx-stamp.mp3` |
+| sfx bóng nổ | `public/audio/sfx/sfx-pop.mp3` |
+| sfx lấp lánh | `public/audio/sfx/sfx-ting.mp3` |
+| sfx khói | `public/audio/sfx/sfx-poof.mp3` |
+| sfx lá thư | `public/audio/sfx/sfx-whoosh.mp3` |
 
 1. Ghi danh sách nguyên dạng `tên: nguồn` vào `assets.input.txt`. File cục bộ phải nằm trong `inbox/`; nguồn có thể là tên file hoặc URL.
 2. Chạy `npm run assets`. Script đổi link Google Drive `/file/d/ID/view` sang URL download. Nếu Google Photos, iCloud, Facebook hoặc nguồn khác trả HTML/chặn tải, không hotlink; báo người dùng tải file về `inbox/anh-NN.jpg`.

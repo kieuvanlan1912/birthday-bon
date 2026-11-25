@@ -10,7 +10,7 @@ export const chapterTwo = [
   'Bố kể lại là tay bố run đến mức lúc đầu không dám bế con. Con nhỏ quá, nhỏ hơn bố tưởng nhiều. Bố bế thật nhẹ, sợ mạnh tay một chút thì con vỡ mất.',
   'Đêm đầu tiên ở nhà, con khóc mà bố mẹ không biết con cần gì. Đói? Ướt? Hay lạnh? Hai người cuống lên, thay tã xong lại cho bú, rồi lại bế đi quanh nhà. Đến sáng cả bố người đều mệt, nhưng lúc nhìn con ngủ, bố mẹ thấy đáng.',
 ]
-export const months = [
+const monthStories = [
   ['Tháng 1','Ngủ, bú, rồi lại ngủ','Tháng đầu tiên của con trôi qua trong mấy việc lặp đi lặp lại: bú, ngủ, thay tã. Bố mẹ thức đêm luân phiên, mắt thâm quầng nhưng vẫn cứ thích đứng nhìn con. Bố nhận ra con có một kiểu nhăn mặt rất riêng mỗi khi bị đánh thức.'],
   ['Tháng 2','Nụ cười đầu tiên','Một sáng mẹ đang thay áo cho con thì con cười. Không phải kiểu cười khi đang ngủ, mà là cười thật, nhìn thẳng vào mẹ. Mẹ gọi bố chạy vào, nhưng bố tới nơi thì con đã thôi. Cả buổi chiều hôm đó bố ngồi chọc con để được thấy tận mắt.'],
   ['Tháng 3','Con biết lẫy','Con bắt đầu cố lật người. Mấy hôm đầu chỉ nghiêng được một nửa rồi kẹt tay, khóc ầm lên. Rồi một hôm con lẫy được hẳn, nằm sấp nhìn quanh với vẻ rất ngạc nhiên, như thể không hiểu sao mình làm được.'],
@@ -24,4 +24,7 @@ export const months = [
   ['Tháng 11','Con thích âm nhạc','Mỗi lần bật nhạc con lắc người theo, không đúng nhịp nhưng rất nghiêm túc. Bố mẹ chọn mấy bài ru cho con nghe, nhưng con lại thích mấy bài sôi động hơn.'],
   ['Tháng 12','Gần một tuổi rồi','Con chập chững vài bước đầu tiên, ngã, rồi cười, rồi đứng dậy. Tháng này bố mẹ ngồi xem lại ảnh của con từ những ngày đầu, nhiều lần phải dừng lại vì không tin con đã lớn đến vậy.'],
 ] as const
+export const monthPoses=['sleep','smile','roll','babble','sit','eat','tooth','crawl','wave','stand','dance','walk'] as const
+export type MonthPose=typeof monthPoses[number]
+export const months=monthStories.map((entry,index)=>Object.assign([...entry] as [string,string,string],{pose:monthPoses[index]}))
 export const finalLetter = ['Bon của bố mẹ,','Hôm nay con tròn một tuổi. Con chưa hiểu sinh nhật là gì, chắc chỉ thấy có bánh, có nhiều người và có nhiều tiếng vỗ tay. Không sao, bố mẹ hiểu thay con.','Bố mẹ không mong con phải giỏi nhất hay nổi bật nhất. Bố mẹ mong con khỏe mạnh, biết thương người, biết cười, và những lúc mệt thì biết rằng nhà luôn có người chờ.','Sau này, khi con lớn và đọc lại trang này, nếu lúc đó con đang gặp chuyện gì khó, nhớ là đã từng có hai người thức đêm chỉ để nhìn con ngủ. Họ vẫn ở đây.','Chúc mừng sinh nhật con, Bon.','Bố & Mẹ']
